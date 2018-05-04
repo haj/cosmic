@@ -226,6 +226,7 @@ public class DatabaseConfig {
         s_configurationComponents.put("publish.alert.events", "management-server");
         s_configurationComponents.put("publish.resource.state.events", "management-server");
         s_configurationComponents.put("publish.async.job.events", "management-server");
+        s_configurationComponents.put("powerstate.interval", "management-server");
 
         s_defaultConfigurationValues.put("host.stats.interval", "60000");
         s_defaultConfigurationValues.put("storage.stats.interval", "60000");
@@ -263,6 +264,7 @@ public class DatabaseConfig {
         s_defaultConfigurationValues.put("publish.alert.events", "true");
         s_defaultConfigurationValues.put("publish.resource.state.events", "true");
         s_defaultConfigurationValues.put("publish.async.job.events", "true");
+        s_defaultConfigurationValues.put("powerstate.interval", "30000");
     }
 
     public static void printError(final String message) {

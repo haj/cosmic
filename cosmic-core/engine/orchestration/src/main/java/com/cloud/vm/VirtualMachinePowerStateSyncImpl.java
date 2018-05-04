@@ -19,8 +19,8 @@ import org.slf4j.LoggerFactory;
 
 public class VirtualMachinePowerStateSyncImpl implements VirtualMachinePowerStateSync {
     private static final Logger s_logger = LoggerFactory.getLogger(VirtualMachinePowerStateSyncImpl.class);
-    protected final ConfigKey<Long> PowerStateInterval = new ConfigKey<>("Advanced", Long.class, "powerstate.interval", "30000",
-            "Interval in ms to get powerstates to make sure the VM's are still in the correct state", false);
+    static final ConfigKey<Long> PowerStateInterval = new ConfigKey<>("Advanced", Long.class, "powerstate.interval", "30000",
+            "Interval in ms to get powerstates to make sure the VM's are still in the correct state", true);
     @Inject
     MessageBus _messageBus;
     @Inject
